@@ -18,16 +18,16 @@ const Page = () => {
 
   // Redirect to another page when redirect state is true
   if (redirect) {
-  //   const randomIndex = Math.floor(Math.random() * links.length);
-  // const selectedLink = links[randomIndex];
+    const randomIndex = Math.floor(Math.random() * links.length);
+  const selectedLink = links[randomIndex];
 
-  // // Redirect to the selected link
-  // window.location.href = selectedLink;
+  // Redirect to the selected link
+  window.location.href = selectedLink;
 
   // return null; // Render nothing
     // Use Next.js's router.push to navigate
-    window.location.href = 'https://www.youtube.com/watch?v=TxZoIH7wO0k'; // Replace '/another-page' with your desired destination
-    return null; // Render nothing
+    // window.location.href = 'https://www.youtube.com/watch?v=TxZoIH7wO0k'; // Replace '/another-page' with your desired destination
+    // return null; // Render nothing
   }
     return (
       <div className="w-full h-screen bg-gradient-to-b from-[#FD6FD7] to-[#FFBECA] flex justify-center items-center">
