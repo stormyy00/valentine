@@ -4,11 +4,9 @@ import Button from './Button'
 import Image from 'next/image';
 import sanrio from "../../public/sanrio.gif";
 
-
-
-const Main = () => {
+const Main = ({name}) => {
     const [startTimer, setStartTimer] = useState(false);
-
+  
     const handleClick = () => {
       // Set startTimer state to true when the "YES" button is clicked
       setStartTimer(true);
@@ -26,9 +24,9 @@ const Main = () => {
 
 <Image src={sanrio} alt="sanrio" className='scale-75'/>
 <div className='flex flex-col items-center w-11/12'>
-    <div className='text-5xl text-pink-600 drop-shadow-lg'>
+    <div className='text-4xl text-pink-600 drop-shadow-lg'>
 
-Valentines??
+    {name ? `Will you be my valentinee ${name}???` : "Vaentine??"}
     </div>
         <div className='flex flex-cols gap-20'>
 

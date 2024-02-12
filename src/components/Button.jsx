@@ -41,7 +41,7 @@ const AnimateButton = () => {
   }, [textIndex]); // Added textIndex as a dependency
 
   return (
-    <button id="butt" className="absolute top-[51.5%] right-[10%] h-14 w-40 text-lg rounded-xl shadow-md bg-pink-500 text-white">
+    <button id="butt" className="absolute top-[50%] right-[10%] h-14 w-40 text-lg rounded-xl shadow-md bg-pink-500 text-white">
         {texts[textIndex].text}
     </button>
   );
